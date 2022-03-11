@@ -1,0 +1,48 @@
+@import "variables";
+
+.header{
+    width: 100%;
+    background-color: $color_secundario;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    &__contenedor{
+        width: 80%;
+        margin: $centrado;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            font-size: 3rem;
+        }
+    }
+    @media (max-width: 768px) {
+        &__contenedor{
+            flex-direction: column;
+        }
+    }
+    &__navegacion{
+        display: flex;
+        gap: 2.5rem;
+
+        a{
+            padding: .5rem;
+            border-bottom: 1px solid rgba($color: $blanco, $alpha: 0);
+            transition: $transicion;
+        }
+        a:hover{
+            border-bottom: 1px solid rgba($color: $blanco, $alpha: 1);
+        }
+
+        @media (max-width: 768px) {
+            & {
+                flex-direction: column;
+                gap: .5rem;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}

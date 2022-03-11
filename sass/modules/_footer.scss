@@ -1,0 +1,12 @@
+@import "variables";
+
+.footer{
+    background-color: $negro;
+    color: $blanco;
+    padding: 2rem 3rem;
+    
+    text-align: center;
+    p{
+        margin-top: 2rem;
+    }
+}

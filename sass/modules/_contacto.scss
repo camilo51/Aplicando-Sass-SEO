@@ -1,0 +1,34 @@
+@import "variables";
+
+.contacto{
+    &__contenedor{
+        .form{
+            border: 1px solid $negro;
+            border-radius: .5rem;
+            margin: 2rem auto;
+            padding: 2rem;
+            width: 50rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            background-image: linear-gradient(90deg, transparent 10%, $color_principal 100%);
+
+            .form__label{
+                padding: 1rem;
+                border: none;
+                border-bottom: 1px solid $negro;
+                background-color: transparent;
+            }
+            &__textarea{
+                @extend .form__label;
+
+                max-width: 100%;
+                min-width: 100%;
+
+                max-height: 20rem;
+                min-height: 20rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.banner{
+    background-image: url(../../img/banner_principal.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: $centrado;
+
+    &__parrafo{
+        color: $blanco;
+        margin: 0;
+        padding: 10%;
+        background-color: rgba($color: #000000, $alpha: .7);
+        text-align: center;
+    }
+}

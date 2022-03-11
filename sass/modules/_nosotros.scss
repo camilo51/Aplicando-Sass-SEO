@@ -1,0 +1,24 @@
+.nosotros{
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+    @media (max-width: 768px) {
+         &{
+             grid-template-columns: 1fr;
+             grid-template-rows: repeat(2, 1fr);
+         }   
+    }
+
+    &__imagen{
+        background-image: url(../../img/nosotros.jpg);
+        background-position: center;
+
+        
+    }
+    &__informacion{
+        text-align: justify;
+        padding: 10rem;
+        background-color: $color_secundario;
+    }
+}
